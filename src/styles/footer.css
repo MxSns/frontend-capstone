@@ -1,0 +1,34 @@
+.footer img {
+    max-width: 20vw;
+    height: auto;
+    object-fit: contain;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+.footer-navigation li {
+    list-style: none;
+}
+.footer-navigation li a {
+    color: #000;
+    text-decoration: none;
+}
+.footer-navigation li a:hover {
+    color:#515151;
+}
+@media screen and (max-width: 980px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .footer img {
+        display: none;
+    }
+    .socials {
+        display: none;
+    }
+}

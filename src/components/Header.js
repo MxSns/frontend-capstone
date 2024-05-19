@@ -1,13 +1,13 @@
 import React from 'react';
+import Nav from './Nav.js';
+import '../styles/header.css';
 import logo from '../assets/images/Logo.svg';
 
 function Header() {
     return (
-        <header>
+        <header className="header">
             <img src={logo} alt="Restaurant logo" />
-            <h1>
-                Little Lemon
-            </h1>
+            <Nav />
         </header>
     );
 }

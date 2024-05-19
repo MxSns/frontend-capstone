@@ -1,0 +1,24 @@
+.specialsContainer {
+    padding: 50px 20px;
+}
+.specialsTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.specialsMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+}
+@media screen and (max-width: 980px) {
+    .specialsMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

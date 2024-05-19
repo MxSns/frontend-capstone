@@ -1,0 +1,21 @@
+h1 {
+    font-family: 'Markazi Text', serif;
+    color:#F4CE14;
+    font-size: 4em;
+}
+h2 {
+    font-family: 'Markazi Text', serif;
+    font-size: 3em;
+}
+.btn {
+    background-color: #F4CE14;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    font-family: 'Karla', sans-serif;
+    border: none;
+}
+.btn:hover {
+    background-color: #ceae11;
+    color: white;
+}

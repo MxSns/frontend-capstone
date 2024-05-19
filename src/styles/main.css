@@ -1,0 +1,32 @@
+main {
+    background-color: #495E57;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.presentation {
+    width: 40%;
+    padding-bottom: 50px
+}
+.mainPhoto {
+    width: 40%;
+}
+.mainPhoto img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+@media screen and (max-width: 980px) {
+    .mainPhoto {
+        display: none;
+    }
+    .presentation {
+        width: 100%;
+    }
+    .presentation p {
+        text-align: justify;
+    }
+}
