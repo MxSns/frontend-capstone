@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import '../styles/footer.css';
 import '../styles/nav.css';
 import logo from '../assets/images/Logo.svg';
@@ -8,15 +9,12 @@ function Footer() {
         <footer className="footer">
             <img src={logo} alt="restaurant logo" />
             <nav className="footer-navigation">
-                <ul>
-                    <h3>Navigation</h3>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#reservations">Reservations</a></li>
-                    <li><a href="#order-online">Order-Online</a></li>
-                    <li><a href="#login">Login</a></li>
-                </ul>
+                <Link to="home" smooth={true} duration={1000} className="nav-item">Home</Link>
+                <Link to="about" smooth={true} duration={1000} className="nav-item">About</Link>
+                <Link to="menu" smooth={true} duration={1000} className="nav-item footer-nav">Menu</Link>
+                <Link to="reservations" smooth={true} duration={1000} className="nav-item">Reservations</Link>
+                <Link to="order-online" smooth={true} duration={1000} className="nav-item">Order Online</Link>
+                <Link to="login" smooth={true} duration={1000} className="nav-item">Login</Link>
             </nav>
                 <div>
                     <h3>Contact</h3>

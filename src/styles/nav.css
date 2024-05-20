@@ -1,5 +1,5 @@
 
-.navigation ul {
+.navigation {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -7,23 +7,21 @@
     margin: 0;
 }
 
-.navigation ul li  {
-    margin: 0px 10px;
+.nav-item {
+    margin: 3px 10px;
+    cursor: pointer;
 }
-.navigation ul li a {
-    text-decoration: none;
-    color: #000;
-}
-.navigation ul li a:hover {
+
+.nav-item:hover {
     color:#515151;
 }
 @media screen and (max-width: 980px) {
-    .navigation ul {
+    .navigation {
       flex-direction: column; /* Change flex direction to column for mobile view */
       align-items: center; /* Center the items */
       width: 100%; /* Make sure the navigation takes full width */
     }
-    .navigation ul li {
+    .nav-item {
       margin: 10px 0; /* Add margin between items vertically */
     }
   }

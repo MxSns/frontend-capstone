@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/main.css';
 import '../styles/general.css';
-import MainPhoto from '../assets/images/restauranfood.jpg';
+import MainPhoto from '../assets/images/restauranfood.webp';
 
 function Main() {
     return (

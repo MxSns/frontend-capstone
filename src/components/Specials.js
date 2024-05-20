@@ -3,8 +3,8 @@ import ItemMenu from './ItemMenu.js';
 import '../styles/general.css';
 import '../styles/specials.css';
 import bruchetta from '../assets/images/bruchetta.svg';
-import greekSalad from '../assets/images/greek salad.jpg';
-import lemonDessert from '../assets/images/lemon dessert.jpg';
+import greekSalad from '../assets/images/legreekSalad.webp';
+import lemonDessert from '../assets/images/lemonDessert.webp';
 
 function Specials() {
     return (

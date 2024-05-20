@@ -9,16 +9,12 @@
     justify-content: space-between;
     padding: 50px 20px;
 }
-.footer-navigation li {
-    list-style: none;
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.footer-navigation li a {
-    color: #000;
-    text-decoration: none;
-}
-.footer-navigation li a:hover {
-    color:#515151;
-}
+
 @media screen and (max-width: 980px) {
     .footer {
         display: flex;
