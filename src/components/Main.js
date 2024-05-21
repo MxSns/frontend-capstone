@@ -1,4 +1,7 @@
 import React from 'react';
+import Header from './Header.js';
+import Specials from './Specials.js';
+import Footer from './Footer.js';
 import { Link } from 'react-router-dom';
 import '../styles/main.css';
 import '../styles/general.css';
@@ -6,6 +9,8 @@ import MainPhoto from '../assets/images/restauranfood.webp';
 
 function Main() {
     return (
+        <>
+        <Header />
         <main>
             <div className="presentation">
             <h1>Little Lemon</h1>
@@ -19,6 +24,10 @@ function Main() {
                 <img src={MainPhoto} alt="Little Lemon main recipe" />
             </div>
         </main>
+        <Specials />
+        <Footer />
+        </>
+
     );
 }
 

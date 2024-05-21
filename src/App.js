@@ -12,13 +12,9 @@ function App() {
     <>
     <Router>
         <Routes>
+        <Route path="/" element={<Main />} />
           <Route path="/reservations" element={<Reservations />} />
         </Routes>
-
-        <Header />
-        <Main />
-        <Specials />
-        <Footer />
       </Router>
     </>
   );

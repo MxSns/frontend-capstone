@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import '../styles/reservationsForm.css';
+import '../styles/general.css';
 
 
 const ReservationForm = () => {
@@ -35,9 +36,9 @@ const ReservationForm = () => {
     };
 
     return (
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Date:</label>
+      <form className="booking-form" onSubmit={handleSubmit}>
+        <div className="form-label">
+          <label >Date:</label>
           <input
             type="date"
             name="date"
@@ -46,8 +47,8 @@ const ReservationForm = () => {
             required
           />
         </div>
-        <div>
-          <label>Time:</label>
+        <div className="form-label">
+          <label >Time:</label>
           <input
             type="time"
             name="time"
@@ -56,9 +57,9 @@ const ReservationForm = () => {
             required
           />
         </div>
-        <div>
-          <label>Number of guests:</label>
-          <button type="button" onClick={() => handleGuestsChange(-1)}>-</button>
+        <div className="form-label">
+          <label >Number of guests:</label>
+          <button className="form-button" onClick={() => handleGuestsChange(-1)}>-</button>
           <input
             type="number"
             name="guests"
@@ -66,10 +67,10 @@ const ReservationForm = () => {
             onChange={handleChange}
             readOnly
           />
-          <button type="button" onClick={() => handleGuestsChange(1)}>+</button>
+          <button className="form-button" onClick={() => handleGuestsChange(1)}>+</button>
         </div>
-        <div>
-          <label>Name:</label>
+        <div className="form-label">
+          <label >Name:</label>
           <input
             type="text"
             name="name"
@@ -78,8 +79,8 @@ const ReservationForm = () => {
             required
           />
         </div>
-        <div>
-          <label>Email:</label>
+        <div className="form-label">
+          <label >Email:</label>
           <input
             type="email"
             name="email"
@@ -88,8 +89,8 @@ const ReservationForm = () => {
             required
           />
         </div>
-        <div>
-          <label>Phone number:</label>
+        <div className="form-label">
+          <label >Phone number:</label>
           <input
             type="tel"
             name="phone"
@@ -98,7 +99,7 @@ const ReservationForm = () => {
             required
           />
         </div>
-        <button type="submit">Submit</button>
+        <button className="btn" type="submit">Submit</button>
       </form>
     );
   };

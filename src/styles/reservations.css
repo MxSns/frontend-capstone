@@ -1,6 +1,35 @@
+
 .booking-photo {
-    padding: 0px 30px;
+    padding: 10px 30px 30px 30px;
+    background-color: #495E57;;
 }
+.booking-photo h2 {
+    text-align: center;
+    color: white;
+}
+
 .booking-photo img {
-    max-width: 100%;
+    width: 100%;
+}
+.container-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #495E57;
+    padding: 30px;
+    gap: 50px;
+}
+.booking-title h2 {
+    color: white;
+}
+.booking-title {
+    max-width: 50%;
+}
+.booking-hours {
+    font-size: 1.7em;
+    color: white;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

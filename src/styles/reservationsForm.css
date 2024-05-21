@@ -1,0 +1,42 @@
+.booking-form {
+    padding: 50px;
+    background-color: rgb(210, 210, 210);
+}
+.btn {
+    margin-top: 100px;
+}
+.form-label {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    padding: 50px;
+    font-size: 2em;
+    gap: 10px;
+}
+input {
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+}
+.form-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+@media screen and (max-width: 980px) {
+    .booking-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+       
+    }
+    
+}
