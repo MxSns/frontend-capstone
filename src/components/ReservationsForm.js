@@ -106,7 +106,7 @@ const ReservationForm = ({ availableTimes = [], setAvailableTimes }) => {
       </div>
       <div className="form-label">
         <label>Number of guests:</label>
-        <button type="button" className="form-button" onClick={() => handleGuestsChange(-1)}>-</button>
+        <button type="button" aria-label="On Click" className="form-button" onClick={() => handleGuestsChange(-1)}>-</button>
         <input
           type="number"
           name="guests"
@@ -114,7 +114,7 @@ const ReservationForm = ({ availableTimes = [], setAvailableTimes }) => {
           onChange={handleChange}
           readOnly
         />
-        <button type="button" className="form-button" onClick={() => handleGuestsChange(1)}>+</button>
+        <button type="button" aria-label="On Click" className="form-button" onClick={() => handleGuestsChange(1)}>+</button>
       </div>
       <div className="form-label">
         <label>Name:</label>
@@ -155,7 +155,7 @@ const ReservationForm = ({ availableTimes = [], setAvailableTimes }) => {
           onChange={handleChange}
         />
       </div>
-      <button className="btn" type="submit">Submit</button>
+      <button className="btn" aria-label="On Click" type="submit">Submit</button>
     </form>
   );
 };

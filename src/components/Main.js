@@ -19,7 +19,7 @@ function Main() {
             <h2>Chicago</h2>
             <p>Lorem ipsum dolor sot amet, consectetur adipiscing elit, sed diam nonumy eirmod tempor incididunt ut labore</p>
             <Link to="/reservations">
-                <button className="btn">Book a table</button>
+                <button className="btn" aria-label="On CLick">Book a table</button>
             </Link>
             </div>
             <div className="mainPhoto">
@@ -28,7 +28,6 @@ function Main() {
         </main>
         <Specials />
         <Footer />
-        
         </>
 
     );
