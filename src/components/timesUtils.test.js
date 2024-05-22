@@ -1,7 +1,7 @@
 import { initializeTimes, updateTimes } from './ReservationForm';
 import { fetchAPI } from '../api.js';
 
-// Mock de fetchAPI
+
 jest.mock('../api.js', () => ({
   fetchAPI: jest.fn(),
 }));

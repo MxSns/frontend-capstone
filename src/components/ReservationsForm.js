@@ -4,21 +4,21 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/reservationsForm.css';
 import '../styles/general.css';
 
-// Fonction pour initialiser les heures avec l'API
+// intialize hours wit api
 export const initializeTimes = async () => {
   const today = new Date().toISOString().split('T')[0];
   const times = await fetchAPI(today);
   return times;
 };
 
-// Fonction pour mettre à jour les heures avec l'API en fonction de la date sélectionnée
+// update hours
 export const updateTimes = async (date) => {
   const times = await fetchAPI(date);
   return times;
 };
 
 const ReservationForm = ({ availableTimes = [], setAvailableTimes }) => {
-  const navigate = useNavigate(); // Utiliser le hook useNavigate
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     date: '',
     time: '',
@@ -29,7 +29,7 @@ const ReservationForm = ({ availableTimes = [], setAvailableTimes }) => {
     occasion: ''
   });
 
-  // Chargement des heures disponibles initiales
+
   useEffect(() => {
     const fetchInitialTimes = async () => {
       const times = await initializeTimes();
@@ -38,7 +38,7 @@ const ReservationForm = ({ availableTimes = [], setAvailableTimes }) => {
     fetchInitialTimes();
   }, [setAvailableTimes]);
 
-  // Gestion du changement des champs de formulaire
+
   const handleChange = async (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -46,14 +46,14 @@ const ReservationForm = ({ availableTimes = [], setAvailableTimes }) => {
       [name]: value
     });
 
-    // Mise à jour des heures disponibles lorsque la date change
+
     if (name === 'date') {
       const times = await updateTimes(value);
       setAvailableTimes(times);
     }
   };
 
-  // Gestion du changement du nombre d'invités
+
   const handleGuestsChange = (change) => {
     setFormData({
       ...formData,
@@ -65,9 +65,9 @@ const ReservationForm = ({ availableTimes = [], setAvailableTimes }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log('Form data:', formData);
-    const isSubmitted = await submitAPI(formData); // Assurez-vous que cette fonction renvoie une promesse
+    const isSubmitted = await submitAPI(formData);
     if (isSubmitted) {
-      navigate('/confirmedBooking', { state: { ...formData } }); // Rediriger vers la page de confirmation avec les données du formulaire
+      navigate('/confirmedBooking', { state: { ...formData } });
     } else {
       alert('Failed to submit reservation.');
     }
