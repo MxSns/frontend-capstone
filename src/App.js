@@ -6,6 +6,7 @@ import Main from './components/Main.js';
 import Specials from './components/Specials.js';
 import Footer from './components/Footer.js';
 import Reservations from './components/Reservations.js';
+import ConfirmedBooking from './components/ConfirmedBooking.js';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
         <Route path="/" element={<Main />} />
           <Route path="/reservations" element={<Reservations />} />
+          <Route path="/confirmedBooking" element={<ConfirmedBooking />} />
         </Routes>
       </Router>
     </>

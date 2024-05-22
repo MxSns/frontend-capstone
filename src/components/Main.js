@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './Header.js';
 import Specials from './Specials.js';
 import Footer from './Footer.js';
+import Reservations from './Reservations.js';
 import { Link } from 'react-router-dom';
 import '../styles/main.css';
 import '../styles/general.css';
 import MainPhoto from '../assets/images/restauranfood.webp';
 
 function Main() {
+    const [availableTimes, setAvailableTimes] = useState([]);
     return (
         <>
         <Header />
@@ -26,6 +28,7 @@ function Main() {
         </main>
         <Specials />
         <Footer />
+        
         </>
 
     );

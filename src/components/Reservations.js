@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './Header.js';
 import Footer from './Footer.js';
-import ReservationsFrom from './ReservationsForm.js';
+import ReservationsForm from './ReservationsForm.js';
 import '../styles/reservations.css';
 import '../styles/general.css';
 import TheChef from '../assets/images/theChef.webp';
 
-function Reservations () {
+const Reservations = () => {
+    const [availableTimes, setAvailableTimes] = useState([]);
     return (
         <div>
             <Header />
@@ -25,7 +26,7 @@ function Reservations () {
                 </div>
                 </div>
             </body>
-            <ReservationsFrom />
+            <ReservationsForm availableTimes={availableTimes} setAvailableTimes={setAvailableTimes} />
             <Footer />
 
         </div>

@@ -1,0 +1,12 @@
+.confirmation {
+    height: 55vh;
+    background-color: #495E57;
+    padding: 30px 30px;
+}
+.confirmation h2 {
+    color: #F4CE14;
+}
+.confirmation p {
+    font-size: 1.4em;
+    color: white;
+}
